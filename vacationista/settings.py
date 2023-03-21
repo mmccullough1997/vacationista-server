@@ -44,7 +44,9 @@ INSTALLED_APPS = [
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
+    'https://641782613a29ed22319ae31d--vacationista.netlify.app',
+    'https://vacationista.netlify.app',
 )
 
 MIDDLEWARE = [

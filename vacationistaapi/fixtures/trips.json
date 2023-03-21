@@ -16,7 +16,7 @@
     "pk": 2,
     "fields": {
       "user": 1,
-      "start": "2023-05-01",
+      "start": "2023-05-02",
       "end": "2023-05-12",
       "travel_from": "Nashville, TN",
       "travel_to": "Paris, France",
