@@ -2,13 +2,11 @@ import os
 import requests
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from dotenv import load_dotenv
-load_dotenv()
 
 class YelpAPIView(APIView):
     def get(self, request, format=None, *args, **kwargs):
       location = kwargs.get('param')
-      yelp_token = os.environ.get('YELP_API_TOKEN')
+      yelp_token = os.getenv('YELP_API_TOKEN')
       headers = {
           "Authorization": f"Bearer {yelp_token}"
       }
