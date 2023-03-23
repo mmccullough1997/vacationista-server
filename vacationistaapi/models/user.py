@@ -6,7 +6,7 @@ class User(models.Model):
   last_name = models.CharField(max_length=25)
   date_registered = models.DateField()
   username = models.CharField(max_length=50)
-  bio = models.CharField(max_length=400)
+  bio = models.CharField(max_length=255)
   image = models.CharField(max_length=200)
 
   @property

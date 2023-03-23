@@ -8,6 +8,6 @@ class Expense(models.Model):
   trip = models.ForeignKey(Trip, on_delete=models.CASCADE)
   leg = models.ForeignKey(Leg, on_delete=models.CASCADE, null=True, blank=True)
   amount = models.DecimalField(max_digits=20, decimal_places=2)
-  comment = models.CharField(max_length=500)
-  title = models.CharField(max_length=500)
+  comment = models.CharField(max_length=255)
+  title = models.CharField(max_length=255)
   
