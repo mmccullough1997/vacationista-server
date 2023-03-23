@@ -7,11 +7,11 @@ class Event(models.Model):
   event_type = models.ForeignKey(EventType, on_delete=models.CASCADE)
   trip = models.ForeignKey(Trip, on_delete=models.CASCADE)
   leg = models.ForeignKey(Leg, on_delete=models.CASCADE, blank=True, null=True)
-  description = models.CharField(max_length=255)
-  location = models.CharField(max_length=255)
+  description = models.TextField()
+  location = models.TextField()
   date = models.DateField(blank=True, null=True)
-  image = models.CharField(max_length=255, blank=True, null=True)
-  title = models.CharField(max_length=255)
+  image = models.TextField(blank=True, null=True)
+  title = models.TextField()
 
   @property
   def user(self):

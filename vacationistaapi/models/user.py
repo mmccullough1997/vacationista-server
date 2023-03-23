@@ -1,13 +1,13 @@
 from django.db import models
 
 class User(models.Model):
-  uid = models.CharField(max_length=50)
-  first_name = models.CharField(max_length=25)
-  last_name = models.CharField(max_length=25)
+  uid = models.TextField()
+  first_name = models.TextField()
+  last_name = models.TextField()
   date_registered = models.DateField()
-  username = models.CharField(max_length=50)
-  bio = models.CharField(max_length=255)
-  image = models.CharField(max_length=200)
+  username = models.TextField()
+  bio = models.TextField()
+  image = models.TextField()
 
   @property
   def events(self):

@@ -5,7 +5,7 @@ class Leg(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   start = models.DateField()
   end = models.DateField()
-  location = models.CharField(max_length=255)
+  location = models.TextField()
   budget = models.DecimalField(max_digits=20, decimal_places=2)
 
   @property
