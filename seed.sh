@@ -21,3 +21,6 @@ python3 manage.py loaddata events
 python3 manage.py loaddata expenses
 python3 manage.py loaddata transportations
 python3 manage.py loaddata trip_legs
+git add -A
+git commit -m 'reset migrations'
+git push origin heroku
