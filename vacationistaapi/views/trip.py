@@ -8,9 +8,6 @@ from .event import EventSerializer
 from .trip_leg import TripLegSerializer
 from .leg import LegSerializer
 
-# bradbutter414
-# jessfirestorm669
-
 class TripSerializer(serializers.ModelSerializer):
   """JSON serializer for Trips"""
   class Meta:
